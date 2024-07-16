@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   padding: 0;
@@ -11,15 +11,16 @@
 }
 
 :root {
-  --white: #ffffff
+  --white: #ffffff;
   --black: #000000;
   --vert: #688144;
+  --light-vert: #799553ac;
+  --other-green: #79955360;
 }
 
 /************ MORGANE ************/
 
 /************ MORGANE ************/
-
 
 /************ EMMY ************/
 
@@ -37,14 +38,14 @@
 
 .galerie {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   gap: 15px 15px;
-  grid-template-areas: 
+  grid-template-areas:
     "food1 food2 food3"
     "food4 food5 food6"
     "food7 food8 food9"
-    "food10 food11 food12"; 
+    "food10 food11 food12";
 }
 
 .galerie img {
@@ -54,73 +55,246 @@
   border-radius: 10px;
 }
 
-.food1 { grid-area: food1; }
+.food1 {
+  grid-area: food1;
+}
 
-.food2 { grid-area: food2; }
+.food2 {
+  grid-area: food2;
+}
 
-.food3 { grid-area: food3; }
+.food3 {
+  grid-area: food3;
+}
 
-.food4 { grid-area: food4; }
+.food4 {
+  grid-area: food4;
+}
 
-.food5 { grid-area: food5; }
+.food5 {
+  grid-area: food5;
+}
 
-.food6 { grid-area: food6; }
+.food6 {
+  grid-area: food6;
+}
 
-.food7 { grid-area: food7; }
+.food7 {
+  grid-area: food7;
+}
 
-.food8 { grid-area: food8; }
+.food8 {
+  grid-area: food8;
+}
 
-.food9 { grid-area: food9; }
+.food9 {
+  grid-area: food9;
+}
 
-.food10 { grid-area: food10; }
+.food10 {
+  grid-area: food10;
+}
 
-.food11 { grid-area: food11; }
+.food11 {
+  grid-area: food11;
+}
 
-.food { grid-area: food12; }
+.food {
+  grid-area: food12;
+}
 
 /*tablette / 2 columns*/
 @media screen and (max-width: 1120px) {
   .galerie {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "food1 food2"
       "food3 food4"
       "food5 food6"
       "food7 food8"
       "food9 food10"
-      "food11 food12"; 
+      "food11 food12";
   }
 }
+
 /*tablette / 2 columns*/
 
 /*phone / 1 column*/
 @media screen and (max-width: 750px) {
   .galerie {
-    display: grid; 
-    grid-template-columns: 1fr; 
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    "food1"
-    "food2"
-    "food3"
-    "food4"
-    "food5"
-    "food6"
-    "food7"
-    "food8"
-    "food9"
-    "food10"
-    "food11"
-    "food12";  
+    grid-template-areas:
+      "food1"
+      "food2"
+      "food3"
+      "food4"
+      "food5"
+      "food6"
+      "food7"
+      "food8"
+      "food9"
+      "food10"
+      "food11"
+      "food12";
   }
 }
+
 /*phone / 1 column*/
 
 /*galerie*/
 
 /*contact*/
+
+.contact-container {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.location-contact {
+  display: flex;
+}
+
+.contact-container p {
+  font-size: 15px;
+}
+
+.informations-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 58px;
+}
+
+.title-contact h3 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.title-contact hr {
+  width: 350px;
+  color: var(--vert);
+  border-radius: 15px;
+}
+
+.text-info {
+  margin: 18px 0;
+  color: var(--light-vert);
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+}
+
+.phone i {
+  font-size: 35px;
+  color: var(--vert);
+}
+
+.lieu {
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.text-phone {
+  margin-left: 22px;
+}
+
+.text-phone h4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text-phone p {
+  color: var(--vert);
+}
+
+/*formulaire de contact*/
+
+
+.form-contact {
+  margin: 80px auto;
+}
+
+.us {
+  background-color: var(--other-green);
+  color: var(--vert);
+  border-radius: 10px;
+  padding: 5px 18px;
+  width: fit-content;
+}
+
+.top-title-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-title-form h2 {
+  margin: 12px 0;
+}
+
+.formulaire-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.formulaire-contact input,
+textarea {
+  background-color: var(--other-green);
+  border-radius: 10px;
+  padding: 15px 20px;
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+.formulaire-contact button {
+  background-color: var(--vert);
+  border-radius: 10px;
+  color: var(--white);
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  margin-top: 20px;
+}
+
+.flex-input {
+  justify-content: space-around;
+  display: flex;
+  width: 100%;
+  gap: 22px;
+}
+
+.marge {
+  margin: 20px 0;
+}
+
+.flex-input input {
+  width: 100%;
+}
+
+.input {
+  width: 50%;
+}
+
+.flex-input textarea {
+  width: 100%;
+  height: 150px;
+}
+
+/*formulaire de contact*/
 
 /*contact*/
 
