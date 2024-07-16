@@ -7,6 +7,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  transition: all 200ms ease;
 }
 
 :root {
@@ -25,5 +26,102 @@
 /************ EMMY ************/
 
 /************ SIHEM ************/
+
+/*galerie*/
+
+.galerie-container {
+  display: grid;
+  justify-content: center;
+  margin: 50px 0;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: 1fr 1fr 1fr 1fr; 
+  gap: 15px 15px;
+  grid-template-areas: 
+    "food1 food2 food3"
+    "food4 food5 food6"
+    "food7 food8 food9"
+    "food10 food11 food12"; 
+}
+
+.galerie img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.food1 { grid-area: food1; }
+
+.food2 { grid-area: food2; }
+
+.food3 { grid-area: food3; }
+
+.food4 { grid-area: food4; }
+
+.food5 { grid-area: food5; }
+
+.food6 { grid-area: food6; }
+
+.food7 { grid-area: food7; }
+
+.food8 { grid-area: food8; }
+
+.food9 { grid-area: food9; }
+
+.food10 { grid-area: food10; }
+
+.food11 { grid-area: food11; }
+
+.food { grid-area: food12; }
+
+/*tablette / 2 columns*/
+@media screen and (max-width: 1120px) {
+  .galerie {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+      "food1 food2"
+      "food3 food4"
+      "food5 food6"
+      "food7 food8"
+      "food9 food10"
+      "food11 food12"; 
+  }
+}
+/*tablette / 2 columns*/
+
+/*phone / 1 column*/
+@media screen and (max-width: 750px) {
+  .galerie {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "food1"
+    "food2"
+    "food3"
+    "food4"
+    "food5"
+    "food6"
+    "food7"
+    "food8"
+    "food9"
+    "food10"
+    "food11"
+    "food12";  
+  }
+}
+/*phone / 1 column*/
+
+/*galerie*/
+
+/*contact*/
+
+/*contact*/
 
 /************ SIHEM ************/
