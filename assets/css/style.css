@@ -10,15 +10,83 @@
 }
 
 :root {
-  --white: #ffffff
+  --white: #ffffff;
   --black: #000000;
   --vert: #688144;
 }
 
 /************ MORGANE ************/
+/********** HEADER ********** /
+/*** LOGO ***/
 
-/************ MORGANE ************/
+header img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 10px auto;
+}
 
+header h1 {
+  text-align: center;
+  text-decoration: none;
+  color: var(--black);
+  margin-bottom: 5px;
+  font-family: "Meow Script";
+  font-weight: 500;
+}
+
+/*** NAVBAR ***/
+nav {
+  background-color: var(--vert);
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*** HERO IMAGE ***/
+.hero_img {
+  background-image: url(../images/background-toast.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 65%;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+/******* FOOTER *******/
+footer {
+  background-color: var(--vert);
+  height: auto;
+  padding-bottom: 5px;
+}
+
+h4 {
+  color: var(--white);
+}
+
+i {
+  font-size: 30px;
+}
+.container_social_media {
+  padding: 20px;
+  gap: 5px;
+}
+
+.social_media {
+}
+
+p {
+  text-align: center;
+  color: var(--white);
+}
 
 /************ EMMY ************/
 
