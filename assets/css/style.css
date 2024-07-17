@@ -12,6 +12,7 @@
 
 :root {
   --white: #ffffff;
+  --light-white: #ffffffeb;
   --black: #000000;
   --vert: #688144;
   --light-vert: #799553ac;
@@ -20,62 +21,154 @@
 
 /************ MORGANE ************/
 
-/************ MORGANE ************/
-
-
-/************ EMMY ************/
-.container {
+.top-logo-title {
   display: flex;
-  flex-direction: row;
-  margin: auto;
-  align-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  width: 100px;
+  display: block;
+  margin: 10px 0;
+}
+
+.title {
+  text-decoration: none;
+  color: var(--black);
+  margin: 15px 0;
+  font-family: "Meow Script";
+  font-weight: 500;
+}
+
+/*** NAVBAR ***/
+nav {
+  background-color: var(--vert);
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*** HERO IMAGE ***/
+.hero_img {
+  background-image: url(../images/background-toast.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 65%;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.preparation {
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  align-content: space-around;
-  border-style: solid;
-  border-color: var(--vert);
-
-  padding: 25px;
+.hero_img h1 {
+  color: var(--vert);
+  background-color: var(--light-white);
+  padding: 10px 30px;
+  border: 2px solid var(--vert);
 }
 
-.personne {
-  flex-wrap: wrap;
-  flex-direction: column;
-  text-align: center;
-  align-content: space-around;
-  border-style: solid;
-  border-color: var(--vert);
-  padding: 25px;
+/******* FOOTER *******/
+
+ul li {
+  list-style-type: none;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 25px;
+}
 
-.difficulte {
-  flex-wrap: wrap;
-  flex-direction: column;
+footer {
+  background-color: var(--light-vert);
+  padding: 30px 0;
+}
+
+h4 {
+  font-size: 25px;
+  color: var(--white);
+}
+
+i {
+  font-size: 30px;
+}
+
+footer p {
   text-align: center;
-  align-content: space-around;
+  color: var(--white);
+}
+
+.social_media {
+  margin-top: 12px;
+  color: var(--vert);
+  display: flex;
+  justify-content: space-between;
+}
+
+.lorem li {
+  color: var(--vert);
+}
+/************ MORGANE ************/
+
+/************ EMMY ************/
+
+.container-recette {
+  max-width: 1200px;
+  margin: 50px auto;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  justify-content: space-around;
+}
+
+.box-icon-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 350px;
+  text-align: center;
   border-style: solid;
   border-color: var(--vert);
-  padding: 25px;
+  padding: 50px 25px;
+}
+
+.etapes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 20px 0;
 }
 
 .fa-solid {
   color: var(--vert);
 }
 
-img{
+.salade img {
   width: 150px;
   margin-bottom: 10%;
 }
-.logo{
+
+.logo {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .recette {
   display: flex;
   background-color: white;
@@ -90,25 +183,17 @@ img{
 
 .salade {
   width: 40%;
-  border-radius: 50%;
-  overflow: hidden;
-  border-style: solid;
-  border-color: var(--vert);
 }
 
-h3,h2{
-  color: var(--vert);
-}
 .salade img {
+  border-radius: 50%;
+  border: solid 2px var(--vert);
   width: 100%;
-  overflow: hidden;
 }
 
-.boutton{
-  background-color: var(--vert);
-  border-style: solid;
-  color: white;
-  padding: 25px;
+h3,
+h2 {
+  color: var(--vert);
 }
 
 /************ EMMY ************/
@@ -309,7 +394,6 @@ h3,h2{
 
 /*formulaire de contact*/
 
-
 .form-contact {
   margin: 80px auto;
 }
@@ -353,7 +437,7 @@ textarea {
   resize: none;
 }
 
-.formulaire-contact button {
+button {
   cursor: pointer;
   background-color: var(--vert);
   border-radius: 10px;
