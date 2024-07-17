@@ -79,6 +79,28 @@ nav a {
   border: 2px solid var(--vert);
 }
 
+.title-top-accueil  {
+  display: flex;
+  justify-content: center;
+  align-items: first baseline;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.title-top-accueil h3 {
+  font-weight: 400;
+  font-size: 25px;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.title-top-accueil h2 {
+  font-family: "Meow Script";
+  font-size: 65px;
+  margin-top: 10px;
+}
+
+
 /******* FOOTER *******/
 
 ul li {
