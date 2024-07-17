@@ -24,6 +24,92 @@
 
 
 /************ EMMY ************/
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  align-content: space-around;
+  justify-content: center;
+}
+
+.preparation {
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-content: space-around;
+  border-style: solid;
+  border-color: var(--vert);
+
+  padding: 25px;
+}
+
+.personne {
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-content: space-around;
+  border-style: solid;
+  border-color: var(--vert);
+  padding: 25px;
+}
+
+
+.difficulte {
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  align-content: space-around;
+  border-style: solid;
+  border-color: var(--vert);
+  padding: 25px;
+}
+
+.fa-solid {
+  color: var(--vert);
+}
+
+img{
+  width: 150px;
+  margin-bottom: 10%;
+}
+.logo{
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.recette {
+  display: flex;
+  background-color: white;
+  margin-top: 10%;
+}
+
+.recettesalade {
+  color: black;
+  text-align: left;
+  width: 60%;
+}
+
+.salade {
+  width: 40%;
+  border-radius: 50%;
+  overflow: hidden;
+  border-style: solid;
+  border-color: var(--vert);
+}
+
+h3,h2{
+  color: var(--vert);
+}
+.salade img {
+  width: 100%;
+  overflow: hidden;
+}
+
+.boutton{
+  background-color: var(--vert);
+  border-style: solid;
+  color: white;
+  padding: 25px;
+}
 
 /************ EMMY ************/
 
