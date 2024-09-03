@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Meow+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "Charlotte";
+  src: url(../font/Charlotte.otf);
+}
 
 * {
   padding: 0;
@@ -7,6 +11,7 @@
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
   transition: all 200ms ease;
 }
 
@@ -19,6 +24,18 @@
   --other-green: #79955360;
 }
 
+.charlotte {
+  font-family: "Charlotte", serif;
+}
+
+.black {
+  color: var(--black);
+}
+
+.green {
+  color: var(--vert);
+}
+
 /************ MORGANE ************/
 
 .top-logo-title {
@@ -26,6 +43,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: var(--black);
+  margin-top: 35px;
+}
+
+.logo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .logo img {
@@ -38,28 +66,53 @@
 .title {
   text-decoration: none;
   color: var(--black);
-  margin: 15px 0;
-  font-family: "Meow Script";
-  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.title-desc {
+  font-size: 46px;
 }
 
 /*** NAVBAR ***/
-nav {
+
+.top-tasty {
   background-color: var(--vert);
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-tasty h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
+nav {
   height: 50px;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  color: var(--black);
+  text-transform: uppercase;
+  margin: 8px 0 25px;
 }
 
 nav a {
-  color: var(--white);
   text-decoration: none;
-  font-weight: 600;
+  color: inherit;
 }
 
+nav a:hover {
+  color: var(--vert);
+}
 /*** HERO IMAGE ***/
+
 .hero_img {
   background-image: url(../images/background-toast.jpg);
   background-repeat: no-repeat;
@@ -79,7 +132,7 @@ nav a {
   border: 2px solid var(--vert);
 }
 
-.title-top-accueil  {
+.title-top-accueil {
   display: flex;
   justify-content: center;
   align-items: first baseline;
@@ -95,11 +148,10 @@ nav a {
 }
 
 .title-top-accueil h2 {
-  font-family: "Meow Script";
-  font-size: 65px;
+  font-family: "charlotte", Times, serif;
+  font-size: 55px;
   margin-top: 10px;
 }
-
 
 /******* FOOTER *******/
 
@@ -184,11 +236,6 @@ footer p {
 .salade img {
   width: 150px;
   margin-bottom: 10%;
-}
-
-.logo {
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .recette {
@@ -505,7 +552,7 @@ button {
   margin: 10px;
 }
 
- ul.breadcrumb {
+ul.breadcrumb {
   padding: 10px 16px;
   list-style: none;
 }
@@ -515,7 +562,7 @@ ul.breadcrumb li {
   font-size: 18px;
 }
 
-ul.breadcrumb li+li:before {
+ul.breadcrumb li + li:before {
   padding: 8px;
   color: black;
   content: "/\00a0";
@@ -529,4 +576,4 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: var(--vert);
   text-decoration: underline;
-} 
+}
