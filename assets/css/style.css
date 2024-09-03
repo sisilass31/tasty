@@ -17,11 +17,29 @@
 
 :root {
   --white: #ffffff;
-  --light-white: #ffffffeb;
+  --light-white: #ffffff91;
   --black: #000000;
   --vert: #688144;
   --light-vert: #799553ac;
   --other-green: #79955360;
+  --dark-green: #4f6233;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fd-c {
+  justify-content: space-between;
+}
+
+.my-20 {
+  margin: 20px 0;
+}
+
+.px-30 {
+  padding: 0 30px;
 }
 
 .charlotte {
@@ -103,14 +121,10 @@ nav {
   margin: 8px 0 25px;
 }
 
-nav a {
-  text-decoration: none;
-  color: inherit;
-}
-
 nav a:hover {
   color: var(--vert);
 }
+
 /*** HERO IMAGE ***/
 
 .hero_img {
@@ -159,41 +173,11 @@ ul li {
   list-style-type: none;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  padding-bottom: 25px;
-}
-
-footer {
-  background-color: var(--light-vert);
-  padding: 30px 0;
-}
-
 h4 {
   font-size: 25px;
   color: var(--white);
 }
 
-i {
-  font-size: 30px;
-}
-
-footer p {
-  text-align: center;
-  color: var(--white);
-}
-
-.social_media {
-  margin-top: 12px;
-  color: var(--vert);
-  display: flex;
-  justify-content: space-between;
-}
-
-.lorem li {
-  color: var(--vert);
-}
 /************ MORGANE ************/
 
 /************ EMMY ************/
@@ -205,8 +189,8 @@ footer p {
 
 .container {
   display: flex;
-  margin: auto;
   justify-content: space-around;
+  margin: 0 20px;
 }
 
 .box-icon-details {
@@ -351,46 +335,6 @@ h2 {
   grid-area: food12;
 }
 
-/*tablette / 2 columns*/
-@media screen and (max-width: 1120px) {
-  .galerie {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "food1 food2"
-      "food3 food4"
-      "food5 food6"
-      "food7 food8"
-      "food9 food10"
-      "food11 food12";
-  }
-}
-
-/*tablette / 2 columns*/
-
-/*phone / 1 column*/
-@media screen and (max-width: 750px) {
-  .galerie {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas:
-      "food1"
-      "food2"
-      "food3"
-      "food4"
-      "food5"
-      "food6"
-      "food7"
-      "food8"
-      "food9"
-      "food10"
-      "food11"
-      "food12";
-  }
-}
-
 /*phone / 1 column*/
 
 /*galerie*/
@@ -404,6 +348,7 @@ h2 {
 
 .location-contact {
   display: flex;
+  margin: 0 20px;
 }
 
 .contact-container p {
@@ -576,4 +521,259 @@ ul.breadcrumb li a {
 ul.breadcrumb li a:hover {
   color: var(--vert);
   text-decoration: underline;
+}
+
+/*footer*/
+
+.footer-container {
+  padding: 45px 0 20px;
+  background: linear-gradient(0deg, var(--dark-green) 0%, var(--vert) 100%);
+  color: var(--white);
+}
+
+.footer-box {
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-box p,
+.footer-links a {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--light-white);
+}
+
+.footer-links a:hover {
+  color: var(--black);
+}
+
+.row {
+  display: flex;
+}
+
+.about {
+  width: 50%;
+}
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--vert);
+  color: var(--white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.copyright-container {
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.social-icons li a:hover {
+  background-color: var(--light-white);
+  color: var(--black);
+}
+
+.social-icons li a i {
+  font-size: 16px;
+}
+
+.links-company {
+  display: flex;
+}
+
+.right-container {
+  width: 50%;
+}
+
+.links-company {
+  width: 50%;
+}
+
+.fd-c {
+  flex-direction: column;
+}
+
+footer hr {
+  border: none;
+  height: 2px;
+  background-color: var(--light-vert);
+}
+
+footer h4 {
+  font-size: 20px;
+}
+
+/*footer*/
+
+@media screen and (max-width: 1200px) {
+  .footer-box {
+    width: 795px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .galerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "food1 food2"
+      "food3 food4"
+      "food5 food6"
+      "food7 food8"
+      "food9 food10"
+      "food11 food12";
+  }
+  .box-icon-details {
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .links-company {
+    width: 100%;
+    margin-top: 18px;
+  }
+  .right-container {
+    width: 50%;
+  }
+  .about {
+    width: 100%;
+  }
+  .footer-box {
+    width: 795px;
+  }
+  .location-contact {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .informations-contact {
+    margin-left: 0px;
+  }
+  iframe {
+    width: 100%;
+  }
+  .form-contact {
+    margin: 80px 20px;
+  }
+  .box-icon-details {
+    width: 250px;
+  }
+  .recette {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .recettesalade {
+    text-align: center;
+  }
+  .salade {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .footer-links-box {
+    flex-direction: column;
+  }
+  .footer-box {
+    width: 655px;
+  }
+  .box-icon-details {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .galerie {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "food1"
+      "food2"
+      "food3"
+      "food4"
+      "food5"
+      "food6"
+      "food7"
+      "food8"
+      "food9"
+      "food10"
+      "food11"
+      "food12";
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .footer-links-box {
+    flex-direction: column;
+  }
+  .footer-box {
+    width: 100%;
+  }
+  .links-company {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .footer-box {
+    text-align: center;
+  }
+  .right-container {
+    width: 100%;
+  }
+  .galerie {
+    padding: 20px;
+  }
+  .breadcrumb-container {
+    display: none;
+  }
+  nav {
+    justify-content: center;
+    gap: 15px;
+  }
+  nav a {
+    font-size: 12px;
+  }
+  .top-tasty h4 {
+    font-size: 14px;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .title-desc {
+    font-size: 38px;
+  }
+  .flex-input {
+    flex-direction: column;
+  }
+  .input {
+    width: 100%;
+  }
+  .title-contact h3 {
+    font-size: 20px;
+  }
+  .top-title-form h2 {
+    font-size: 20px;
+  }
+  .container {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .box-icon-details {
+    width: 100%;
+  }
 }
